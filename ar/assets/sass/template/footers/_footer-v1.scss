@@ -1,0 +1,94 @@
+.footer-subscribe {
+  display: flex;
+  max-width: 100%;
+  width: 420px;
+  position: relative;
+  --btn-size: 176px;
+  border: 1px solid #dddee6;
+  padding: 4px;
+  border-radius: 9999px;
+
+  input {
+    background-color: transparent;
+    border-radius: inherit;
+    width: calc(100% - var(--btn-size));
+    border: none;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 14px;
+
+    &:focus {
+      border: none;
+      background-color: transparent;
+    }
+  }
+
+  button {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    width: var(--btn-size);
+    border-radius: 9999px;
+  }
+}
+
+.social-btn {
+  --btn-size: 45px;
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 12px;
+  }
+
+  a {
+    display: inline-block;
+    width: var(--btn-size);
+    height: var(--btn-size);
+    line-height: var(--btn-size);
+    text-align: center;
+    border: 1px solid #dddee6;
+    border-radius: 50%;
+    color: $title-color;
+  }
+}
+
+
+.footer-top {
+  border-bottom: 1px solid #dddee6;
+  padding-bottom: 25px;
+  margin-bottom: 60px;
+  padding-top: 55px;
+}
+
+
+@include sm {
+  .footer-subscribe {
+    width: 100%;
+  }
+}
+
+
+@include xs {
+  .footer-subscribe {
+    border: none;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-top: 10px;
+
+    input {
+      width: 100%;
+      border: 1px solid #dddee6;
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+  }
+}

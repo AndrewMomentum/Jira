@@ -1,0 +1,45 @@
+@each $bgcolorMap, $value in $bgcolorMap {
+  .bg-#{$bgcolorMap} {
+    background-color: #{$value} !important;
+  }
+}
+
+[data-bg-src] {
+  @include background-content(no-repeat, cover, center center);
+}
+
+.bg-fluid {
+  @include background-content(no-repeat, 100% 100%, center center);
+}
+
+.bg-auto {
+  background-size: auto auto;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+
+.bg1 {
+  background-size: auto auto;
+  background-position: top center;
+}
+
+
+.bg2 {
+  background-size: 100% calc(100% - 98px);
+  background-position: bottom center;
+  
+  @include lg {
+    background-size: auto calc(100% - 98px);
+  }
+}
+
+
+@include hd-device {
+  .bg1 {
+    background-size: 100%;
+  }
+
+}

@@ -1,0 +1,66 @@
+.vs-newsletter-wrpper {
+  .inner-wrap1 {
+    border-radius: 10px;
+  }
+}
+
+
+.newsletter-style1 {
+  position: relative;
+
+  input {
+    border: none;
+    height: 65px;
+    border-radius: 9999px;
+    padding-left: 40px;
+
+    &:focus {
+      border: none;
+    }
+  }
+
+  .vs-btn {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    box-shadow: none;
+  }
+  
+}
+
+
+@include sm {
+  .vs-newsletter-wrpper {
+    .inner-wrap1 {
+      &.px-70.py-70 {
+        padding: 40px;
+      }
+    }
+  }
+}
+
+@include sm {
+  .vs-newsletter-wrpper {
+    .inner-wrap1 {
+      &.px-70.py-70 {
+        padding: 30px 15px;
+      }
+    }
+  }
+
+  .newsletter-style1 {
+    text-align: center;
+
+    input {
+      height: 50px;
+    }
+    
+    .vs-btn {
+      position: relative;
+      top: 0;
+      right: 0;
+      margin-top: 15px;
+    }
+  }
+}
+

@@ -1,0 +1,9 @@
+@each $textColorsMap, $value in $textColorsMap {
+  .text-#{$textColorsMap} {
+    color: #{$value} !important;
+  }
+}
+
+.text-inherit {
+  color: inherit;
+}

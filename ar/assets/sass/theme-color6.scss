@@ -1,0 +1,9 @@
+@import 'function/function';
+
+// Variable
+$theme-color : #94c4f7;
+
+:root {
+  /* Give only rgb values for opacity control */
+  --theme-color : #{convert-rgb($theme-color)};
+}

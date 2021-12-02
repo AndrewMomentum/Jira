@@ -1,0 +1,56 @@
+.accordion-style1 {
+  .accordion-button {
+    font-weight: 600;  
+    font-size: 18px;
+    font-family: $title-font;
+    color: $title-color;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #f1e4e4;
+    padding: 12px 0;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    &:after {
+      width: auto;
+      height: auto;
+      background-image: none;
+      content: '\f078';
+      font-family: $icon-font;
+      font-size: 0.8rem;
+    }
+    
+  }
+  
+  .accordion-body {
+    padding: 0;
+    padding-top: 12px;
+    border: none;
+    border-bottom: 1px solid transparent;
+    transition: all ease 0.4s;
+  }
+  
+  .accordion-collapse {
+    border: none;
+
+    &.show {
+      .accordion-body {
+        border-color: #f1e4e4;
+      }
+    }
+  }
+  
+
+  .accordion-item {
+    &:first-child {
+      .accordion-button {
+        padding-top: 0;
+      }
+    }  
+  }
+
+
+}

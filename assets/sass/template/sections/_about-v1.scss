@@ -1,0 +1,194 @@
+.vs-about-wrapper {
+  position: relative;
+  
+  .shape1 {
+    position: absolute;
+    right: 11%;
+    bottom: 20%;
+  }
+  
+  .shape2 {
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+  }
+
+  .shape3 {
+    position: absolute;
+    right: 3.5%;
+    top: 5%;
+    z-index: -1;
+  }
+
+  .shape4 {
+    position: absolute;
+    left: 0;
+    bottom: -18%;
+    width: 100%;
+    max-width: 40vw;
+  }
+
+  .shape5 {
+    right: 15%;
+    top: 20%;
+  }
+
+}
+
+.img-box1 {
+  position: relative;
+  padding-left: 70px;
+  padding-top: 75px;
+
+  .img1 {
+    position: absolute;  
+    left: 0;
+    top: 0;
+  }
+}
+
+
+.about-features {
+  align-items: center;
+  display: flex;
+  position: relative;
+  height: 100%;
+  padding: 40px;
+  max-height: 330px;
+
+  .bg-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    opacity: 0.20;
+    line-height: 1;
+  }
+}
+
+
+@media (max-width: 1810px) {
+  .vs-about-wrapper {
+    .shape1 {
+      right: 5%;
+    }
+
+    .shape3 {
+      right: 1%;
+      top: 2%;
+      max-width: 150px;
+    }
+
+    .shape4 {
+      max-width: 33vw;
+    }
+  }
+}
+
+@include xl {
+  .vs-about-wrapper {
+    .shape1 {
+      right: 2%;
+    }
+
+    .shape4 {
+      bottom: -7%;
+    }
+  }
+
+}
+
+
+@include ml {
+  .vs-about-wrapper {
+    .container {
+      &.pt-70 {
+        padding-top: 50px;
+      }
+    }
+  }
+}
+
+
+
+@include lg {
+  .about-content {
+    &.pt-75 {
+      padding-top: 0;
+    }
+  }
+
+  .img-box1 {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-top: 30px;
+  }
+
+  .about-features {
+    padding: 20px;
+
+    .fa-10x {
+      font-size: 7rem;
+    }
+  }
+
+  .vs-about-wrapper {
+    .shape4 {
+      position: relative;
+      left: 0;
+      bottom: 0;
+      padding: 0 var(--bs-gutter-x, .75rem);
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+
+  .about-layout1.bg-fluid {
+    background-size: auto auto;
+    background-position: left top;
+  }
+
+
+}
+
+
+@include md {
+  .img-box1 {
+    max-width: 600px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+
+    .img1 {
+      left: 20%;
+    }
+  }
+
+  .about-features {
+    justify-content: center;
+  }
+}
+
+
+@include sm {
+  .img-box1 {
+    width: 100%;
+    max-width: 350px;
+
+    >img {
+      max-width: 350px;
+      width: 100%;
+    }
+
+    .img1 {
+      left: 0;
+      right: 0;
+      text-align: center;
+      top: 2%;
+    }
+  }
+}
